@@ -1,0 +1,34 @@
+# App Properties
+tolgaocal80:
+  app:
+    jwtSecret: tolgaocal80SecretKey
+    jwtExpirationMs: 86400000
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/testdb?useSSL=false
+    username: root
+    password: root
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+        use_sql_comments: true
+        show_sql: true
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+
+
+  main:
+    banner-mode: off
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api

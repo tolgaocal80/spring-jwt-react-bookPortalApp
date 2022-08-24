@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="925c5841-23f9-49fd-b740-40dc2d28fbfb" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="2DCRAVK2yX5FXUU4GMuhduvntxu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/latest-project-spring-react-jwt-book-portal/react-jwt-auth&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\latest-project-spring-react-jwt-book-portal\react-jwt-auth\src\components\admin-components\user.management.components" />
+      <recent name="C:\Users\user\Desktop\latest-project-spring-react-jwt-book-portal\react-jwt-auth\src\components\admin-components\book.management.components" />
+      <recent name="C:\Users\user\Desktop\latest-project-spring-react-jwt-book-portal\react-jwt-auth\src\components\login-components" />
+      <recent name="C:\Users\user\Desktop\latest-project-spring-react-jwt-book-portal\react-jwt-auth\src\components\admin-components" />
+      <recent name="C:\Users\user\Desktop\latest-project-spring-react-jwt-book-portal\react-jwt-auth\src\auth" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="925c5841-23f9-49fd-b740-40dc2d28fbfb" name="Changes" comment="" />
+      <created>1660200936494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660200936494</updated>
+      <workItem from="1660200943483" duration="36599000" />
+      <workItem from="1660250376549" duration="585000" />
+      <workItem from="1660251266491" duration="331000" />
+      <workItem from="1660284525242" duration="10622000" />
+      <workItem from="1660924952661" duration="4416000" />
+      <workItem from="1660995333142" duration="357000" />
+      <workItem from="1660995709708" duration="27249000" />
+      <workItem from="1661073537538" duration="21739000" />
+      <workItem from="1661105158090" duration="6804000" />
+      <workItem from="1661166740352" duration="11976000" />
+      <workItem from="1661201911032" duration="6005000" />
+      <workItem from="1661242224208" duration="11459000" />
+      <workItem from="1661263669457" duration="2947000" />
+      <workItem from="1661282927885" duration="13451000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+</project>
