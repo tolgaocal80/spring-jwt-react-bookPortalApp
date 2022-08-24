@@ -122,7 +122,6 @@ public class BookService {
         return bookRepository.getAllByActiveTrueOrderByViewsNumber();
     }
 
-    // Yazar ismi yazınca örnegin "Marcus", yazar isminde Marcus bulunan bütün kitaplar gelsin.
     public List<Book> findAllByAuthorName(String authorName){
         return bookRepository.findAllByAuthorNameContainsAndActiveTrueOrderByName(authorName)
                 .orElseThrow(() -> {
@@ -147,8 +146,14 @@ public class BookService {
     }
 
     public Book getMaxReadBook(){
-        return bookRepository.getMaxReadBook().orElseThrow(() -> {
-            throw new IllegalArgumentException("No book found");
+        return bookRepository.findFirstByOrderByReadNumberDesc().orElseThrow(() -> {
+            throw new IllegalArgumentException("Couldn't find");
+        });
+    }
+
+    public Book getMaxFavoritedBook(){
+        return bookRepository.findFirstByOrderByFavoriteNumberDesc().orElseThrow(() -> {
+            throw new IllegalArgumentException("Couldn't find");
         });
     }
 

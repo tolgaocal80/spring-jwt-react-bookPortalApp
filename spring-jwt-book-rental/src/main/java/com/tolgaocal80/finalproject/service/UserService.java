@@ -85,6 +85,12 @@ public class UserService implements UserDetailsService {
         return userRepository.getReadBookNumbers();
     }
 
+    public User getMaxReadUser(){
+        return userRepository.findFirstByOrderByReadBooksNumberDesc().orElseThrow(() -> {
+            throw new IllegalArgumentException("Couldn't found");
+        });
+    }
+
     public List<User> findAllByUsername(String username){
         return userRepository.findByUsernameStartsWithAndActiveTrueOrderByCreateDateDesc(username);
     }
@@ -154,10 +160,6 @@ public class UserService implements UserDetailsService {
             userReadBooks = user.getReadBooks().stream().toList();
         }
         return userReadBooks;
-    }
-
-    public List<User> getUsersWithRole(List<String> roles){
-        return userRepository.findByRoles_NameIn(roles);
     }
 
     public User getById(long id){

@@ -206,6 +206,7 @@ export default class BooksList extends Component {
 
                     <div className="col-md-8">
                         <div className="input-group mb-3">
+
                             <input
                                 type="text"
                                 className="form-control"
@@ -223,6 +224,7 @@ export default class BooksList extends Component {
                                 </button>
                             </div>
                         </div>
+
                     </div>
 
                     <div className="col-md-6">
@@ -315,6 +317,14 @@ export default class BooksList extends Component {
                                         <strong>Type:</strong>
                                     </label>{" "}
                                     {currentBook.type}
+                                </div>
+
+
+                                <div>
+                                    <label>
+                                        <strong>ISBN:</strong>
+                                    </label>{" "}
+                                    {currentBook.isbn}
                                 </div>
 
                                 <div>

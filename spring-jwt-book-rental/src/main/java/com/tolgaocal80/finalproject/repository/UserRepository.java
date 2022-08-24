@@ -1,5 +1,6 @@
 package com.tolgaocal80.finalproject.repository;
 
+import com.tolgaocal80.finalproject.entity.Book;
 import com.tolgaocal80.finalproject.entity.User;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -30,6 +31,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
     int getReadBookNumbers();
 
 
+    Optional<User> findFirstByOrderByReadBooksNumberDesc();
 
     boolean existsByUsername(String username);
 

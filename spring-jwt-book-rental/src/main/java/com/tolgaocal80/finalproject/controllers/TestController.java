@@ -1,12 +1,19 @@
 package com.tolgaocal80.finalproject.controllers;
 
+import com.tolgaocal80.finalproject.entity.Book;
+import com.tolgaocal80.finalproject.entity.User;
 import com.tolgaocal80.finalproject.service.BookService;
 import com.tolgaocal80.finalproject.service.UserService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
@@ -22,13 +29,31 @@ public class TestController {
   }
 
   @GetMapping("/all")
-  public String allAccess() {
+  public ResponseEntity<Map<String, Object>> allAccess() {
 
-    int userCount = userService.getUserNumber();
-    int readBooksNumber = userService.readBooksNumbers();
+    try{
+      int userCount = userService.getUserNumber();
+      int readBooksNumber = userService.readBooksNumbers();
 
-    return "Welcome to Book Rental App\n You can manage your books here...\n" +
-            "There are " + userCount + " user and "+ readBooksNumber +" books read.";
+      Book maxReadBook = bookService.getMaxReadBook();
+      Book maxFavoritedBook = bookService.getMaxFavoritedBook();
+      User maxReadUser = userService.getMaxReadUser();
+
+      Map<String, Object> response = new HashMap<>();
+
+      String message = "Welcome to Book Rental App." +
+              "There are " + userCount + " user and "+ readBooksNumber +" books read.";
+
+      response.put("message",message);
+      response.put("maxReadUser", maxReadUser);
+      response.put("maxReadBook", maxReadBook);
+      response.put("maxFavoritedBook", maxFavoritedBook);
+
+      return ResponseEntity.ok(response);
+
+    }catch (Exception e){
+      return new ResponseEntity<>(null, HttpStatus.INTERNAL_SERVER_ERROR);
+    }
   }
 
   @GetMapping("/user")
@@ -37,11 +62,6 @@ public class TestController {
     return "User Content.";
   }
 
-  @GetMapping("/mod")
-  @PreAuthorize("hasRole('MODERATOR')")
-  public String moderatorAccess() {
-    return "Moderator Board.";
-  }
 
   @GetMapping("/admin")
   @PreAuthorize("hasRole('ADMIN')")

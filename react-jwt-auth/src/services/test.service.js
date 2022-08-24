@@ -6,7 +6,7 @@ const API_URL = 'http://localhost:8080/api/test/';
 class TestService {
 
   getPublicContent() {
-    return axios.get(API_URL + 'all');
+    return axios.get(API_URL + 'all', {headers: authHeader()});
   }
 
   getAdminBoard() {

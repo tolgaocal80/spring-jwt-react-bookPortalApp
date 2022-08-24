@@ -28,38 +28,44 @@ public class AuthorController {
         this.authorService = authorService;
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("")
     public ResponseEntity<List<Author>> getAllAuthors(){
         return ResponseEntity.ok(authorService.findAll());
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/by-name")
     public ResponseEntity<Author> findAuthorByName(@RequestParam(name = "name") String authorName){
         return ResponseEntity.ok(authorService.findByName(authorName));
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/all-by-book-name")
     public ResponseEntity<List<Author>> findAllByBooksNameContains(@RequestParam(name = "bookName") String bookName){
         return ResponseEntity.ok(authorService.findAllAuthorsByBookName(bookName));
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/all-by-book-type")
     public  ResponseEntity<List<Author>> findAllByBooksTypeContains(@RequestParam(name = "bookType") String bookType){
         return ResponseEntity.ok(authorService.findAllAuthorsByBookType(bookType));
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/all-by-name")
     public ResponseEntity<List<Author>> findAllByName(@RequestParam(name = "name") String authorName){
         return ResponseEntity.ok(authorService.findAllByName(authorName));
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/all-with-pagination")
     public ResponseEntity<Page<Author>> getAllAuthorsWithPagination(@RequestParam(name = "pageNumber") int pageNumber, @RequestParam(name = "pageSize") int pageSize){
         return ResponseEntity.ok(authorService.findAllWithPagination(pageNumber,pageSize));
     }
 
 
-
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/search-by-authorname-pagination")
     public ResponseEntity<Map<String, Object>> getAuthorsWithJpaPagination(
             @RequestParam(name = "authorName", required = false) String authorName,
@@ -74,17 +80,17 @@ public class AuthorController {
     }
 
 
-
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/all-order-by-book-number")
     public ResponseEntity<List<Author>> getAllAuthorsOrderByNumberOfBooks(){
         return ResponseEntity.ok(authorService.getAuthorsOrderByNumberOfBooks());
     }
-
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/by-id")
     public ResponseEntity<Author> findById(@RequestParam(name = "id") Long id){
         return ResponseEntity.ok(authorService.findById(id));
     }
-
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PutMapping("/edit/{authorId}")
     public ResponseEntity<?> updateAuthor(@PathVariable(name = "authorId") long id, @Valid @RequestBody AuthorUpdateDTO authorUpdateDTO){
 
@@ -104,7 +110,7 @@ public class AuthorController {
                     .body(new MessageResponse(responseMessage));
         }
     }
-
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @DeleteMapping("/{authorId}")
     public ResponseEntity<Author> removeAuthor(@PathVariable(name = "authorId") long id){
         return ResponseEntity.ok(authorService.remove(id));
@@ -138,12 +144,12 @@ public class AuthorController {
 
 
 
-
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PostMapping("/{authorId}/add-book")
     public ResponseEntity<Author> addBookToAuthor(@PathVariable(name = "authorId") long id, @Valid @RequestBody BookDTO bookDTO){
         return ResponseEntity.ok(authorService.addBookToAuthor(id, bookDTO));
     }
-
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PostMapping("/add-book-to-author")
     public ResponseEntity<Author> addBookToAuthor(@RequestParam(name = "authorName") String authorName, @Valid @RequestBody BookDTO bookDTO){
         authorName = authorName.replaceAll("%20"," ");

@@ -270,7 +270,6 @@ export default class ManageAuthors extends Component {
 
                                             )}
                                     </ul>
-
                                 </div>
 
 

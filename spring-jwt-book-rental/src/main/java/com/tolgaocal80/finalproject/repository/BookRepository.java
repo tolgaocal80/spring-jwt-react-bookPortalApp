@@ -23,8 +23,11 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
     Optional<Book> findById(Long id);
 
-    @Query("select max(b.readNumber) from Book b")
-    Optional<Book> getMaxReadBook();
+
+    Optional<Book> findFirstByOrderByFavoriteNumberDesc();
+
+    Optional<Book> findFirstByOrderByReadNumberDesc();
+
 
     Page<Book> searchBooksByActiveTrueAndNameContains(String name, Pageable pageable);
 

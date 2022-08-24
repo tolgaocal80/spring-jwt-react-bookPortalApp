@@ -33,9 +33,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/auth")
 
-
-// Resource
-// Repositr !
 public class AuthController {
   private static final String ROLE_USER = "ROLE_USER";
   private static final String ROLE_ADMIN = "ROLE_ADMIN";

@@ -65,10 +65,12 @@ public class UserController {
     }
 
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @GetMapping("/{userId}")
     public ResponseEntity<User> getUser(@PathVariable(name = "userId") long id){
         return ResponseEntity.ok(userService.findById(id));
     }
+
 
     @GetMapping("/{userId}/get-favorite-books")
     public ResponseEntity<List<Book>> getUsersFavoriteBooksById(@PathVariable(name = "userId") long userId){

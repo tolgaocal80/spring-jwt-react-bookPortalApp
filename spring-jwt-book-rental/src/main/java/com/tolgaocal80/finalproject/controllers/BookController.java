@@ -150,6 +150,7 @@ public class BookController {
         return ResponseEntity.ok(bookService.remove(id));
     }
 
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     @PostMapping("")
     public ResponseEntity<?> createBook(@Valid @RequestBody BookDTO bookDTO){
 
