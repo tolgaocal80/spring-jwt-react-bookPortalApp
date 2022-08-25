@@ -24,3 +24,151 @@ User authentication managed with JWT.
 - [x] Easy author, books management
 
 Screenshots:
+
+<div>
+  Login Page:
+</div>
+ 
+<div>
+  <img src="./screenshots/user-login.png" width="600" height="200" alt="Login"/>
+</div>
+
+<div>
+  Register Page(Only can register as a user)
+</div>
+
+<div>
+  <img src="./screenshots/user-register-ONLY-AS-A-USER.png" width="600" height="200"  />
+</div>
+
+<div>
+    Profile Pages for users and admins
+</div>
+
+<div>
+  <img src="./screenshots/user-profile-ROLE-USER.png" width="600" height="200" />
+</div>
+  
+<div>
+  <img src="./screenshots/user-profile-ADMIN.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin User Management Page
+</div>
+
+<div>
+  <img src="./screenshots/user-management/user-management-screen-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Add User Page
+</div>
+
+<div>
+  <img src="./screenshots/user-management/user-management-screen-add-user-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Edit User Page
+</div>
+
+<div>
+  <img src="./screenshots/user-management/user-management-screen-edit-user-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Edit Own Account Page(Role select hidden)
+</div>
+
+<div>
+  <img src="./screenshots/user-management/user-management-screen-edit-user-AYNI-HESAP-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Edit User Completed Page(will be redirected to user list page after 5 seconds)
+</div>
+
+<div>
+  <img src="./screenshots/user-management/user-management-screen-edit-user-completed-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Book Management Page
+</div>
+
+<div>
+  <img src="./screenshots/book-management/book-management-screen-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  User Book Management Page
+</div>
+
+<div>
+  <img src="./screenshots/book-management/book-management-screen-FOR-USER-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Add Book Page
+</div>
+
+<div>
+  <img src="./screenshots/book-management/book-management-screen-add-book-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Add Book Error
+</div>
+
+<div>
+  <img src="./screenshots/book-management/book-management-screen-add-book-error-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Edit Book Page
+</div>
+
+<div>
+  <img src="./screenshots/book-management/book-management-screen-edit-book-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+  
+<div>
+    Admin Author Management Page
+</div>
+  
+<div>
+  <img src="./screenshots/author-management/author-management-scrren-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+ <div>
+  Admin Add Author Page
+</div>
+
+ <div>
+  <img src="./screenshots/author-management/author-management-scrren-add-author-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+ <div>
+  Admin Add Book to Author Page
+</div>
+
+<div>
+  <img src="./screenshots/author-management/author-management-scrren-add-book-to-author-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Admin Edit Author Page
+</div>
+
+<div>
+  <img src="./screenshots/author-management/author-management-scrren-edit-author-ADMIN-ROLE.png" width="600" height="200" />
+</div>
+
+<div>
+  Database diagram
+</div>
+
+<div>
+  <img src="./screenshots/database-diagram.png" />
+</div>
