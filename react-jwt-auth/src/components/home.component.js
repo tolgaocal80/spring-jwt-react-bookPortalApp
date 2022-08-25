@@ -149,7 +149,7 @@ export default class Home extends Component {
                                                 <strong>Author:</strong> {maxReadBook.authorName}
                                             </div>
                                             <div>
-                                                <img src={maxReadImageUrl} className="bookImage"/>
+                                                <img src={maxReadImageUrl} className="bookImage" alt="max-read-book-image"/>
                                             </div>
                                         </div>
 
@@ -165,7 +165,7 @@ export default class Home extends Component {
                                             </div>
                                             <br/>
                                             <div>
-                                                <img src={maxFavoritedImageUrl} className="bookImage"/>
+                                                <img src={maxFavoritedImageUrl} className="bookImage" alt="max-favorited-book-image"/>
                                             </div>
                                         </div>
 

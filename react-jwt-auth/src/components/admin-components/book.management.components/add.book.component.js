@@ -76,7 +76,7 @@ export default class AddBookPage extends Component {
     }
 
     updateRedirectCounter() {
-        let upTo = 5;
+        let upTo = 6;
         let counts = setInterval(updated, 1000);
 
         function updated(){
@@ -259,12 +259,11 @@ export default class AddBookPage extends Component {
                             <div className="form-group">
 
                                 <div className={
-                                    this.state.successful
-                                        ? "alert alert-success"
-                                        : "alert alert-danger"} id="redirectCounter"
+                                    this.state.successful &&
+                                         "alert alert-success"
+                                        } id="redirectCounter"
                                      role="alert"
                                 >
-                                    You will be redirected to book list after 5 seconds...
                                 </div>
 
                                 &emsp;&emsp;
@@ -279,9 +278,6 @@ export default class AddBookPage extends Component {
                                 >
                                     {this.state.message}
                                 </div>
-
-
-
                             </div>
                         )}
 
