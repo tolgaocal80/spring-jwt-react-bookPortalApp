@@ -42,6 +42,14 @@ Screenshots:
 </div>
 
 <div>
+Home Page
+</div>
+
+<div>
+  <img src="./screenshots/home-page.png" width="600" height="200"  />
+</div>
+
+<div>
     Profile Pages for users and admins
 </div>
 
